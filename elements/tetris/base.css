@@ -1,0 +1,62 @@
+#game-container-canvas {
+    width: 100%;
+    min-width: 50%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.next-elem-container {
+    text-align: center;
+}
+
+#game-container-canvas canvas:last-child {
+    margin: 0 0 0 20px;
+}
+
+#game-container-canvas canvas:first-child {
+    margin: 0 20px 0 40px;
+}
+
+.container-start-game {
+    text-align: center;
+}
+
+.start-game {
+    margin-top: 15px;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border-radius: 45px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 550;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .1s;
+    border: 1px solid black;
+    line-height: 38px;
+}
+
+.start-game:hover {
+    box-shadow: 0 15px 20px rgba(237, 142, 213, .25);
+    transform: translateY(-2px)  translateX(1px);
+}
+
+.next-elem {
+    aspect-ratio: 1/1;
+    background: black;
+}
+
+.tetris {
+    border: 1px solid white;
+    background: black;
+}
+
+.next-elem-label {
+    font-size: 27px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сама игра</title>
+    <link rel="stylesheet" href="elements/tetris/base.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="elements/playerList/index.css">
+    <script defer type="module" src="js/pages/game.js"></script>
+</head>
+<body>
+    <div class="content-table">
+        <div class="content-table-column player-list-container">
+            <div class="current-player-label">
+                Текущий игрок:
+                <span></span>
+            </div>
+            <div class="min-player-list-container">
+                <div class="playerList"></div>
+            </div>
+            <div class="container-back-button">
+                <div class="back-button" onclick="window.location.href = 'index.html'">
+                    На страницу логина!!!
+                </div>
+            </div>
+        </div>
+        <div class="tetris-container content-table-column">
+            <div class="Tetris"></div>
+        </div>
+    </div>
+<script type="module" src="elements/playerList/playerList.js"></script>
+
+</body>
+</html>

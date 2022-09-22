@@ -1,0 +1,55 @@
+.player-list {
+    font-size: 30px;
+    /*border-collapse: collapse;*/
+    /*border-collapse: separate;*/
+    border-spacing: 0 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.player-list-column {
+    padding: 0 40px;
+}
+
+
+.player-list-row {
+}
+
+
+.player-list-row th {
+    border-top: 2px solid #A66F00;
+    border-bottom: 2px solid #A66F00;
+    /*border-radius: 0px;*/
+    font-weight: 200;
+}
+
+
+.player-list-row th:first-child {
+    border-left: 2px solid #A66F00;
+    border-top: 2px solid #A66F00;
+    border-bottom: 2px solid #A66F00;
+    border-radius: 10px 0 0 10px;
+    font-weight: 200;
+}
+
+
+.player-list-row th:nth-child(2) {
+    border-radius: 0 10px 10px 0;
+}
+
+
+.player-list-row th:last-child {
+    border-right: 2px solid #A66F00;
+    border-radius: 10px 10px 10px 10px;
+    border-left: 2px solid #A66F00;
+}
+
+
+
+
+
+
+
+
+
