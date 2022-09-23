@@ -51,7 +51,7 @@ export class TetrisMap {
         }
     }
 
-    findFullLines(start = 0) {
+    findFullLines() {
         let count = 0
         for (let i = this.height - 1; i >= 0; i--) {
             let columns = 0

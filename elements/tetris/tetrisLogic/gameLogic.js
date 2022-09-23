@@ -7,9 +7,6 @@ import {KeyControl} from "./operateKeyDown.js";
 import {rotateMatrix} from "../../../js/utils.js";
 
 
-
-
-
 export class GameLogic {
     _colors = {
         L: '#f292a7',
@@ -55,6 +52,7 @@ export class GameLogic {
 
         this._renderNextElem.clearCanvas()
         this._renderTetris.clearCanvas()
+
         document.onkeydown = this._keyControl.keyDownListener.bind(this._keyControl)
     }
 
@@ -189,22 +187,3 @@ export class GameLogic {
         this.#showNextElem()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

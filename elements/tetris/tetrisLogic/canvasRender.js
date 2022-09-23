@@ -1,8 +1,7 @@
 export class CanvasRender {
-    constructor(canvas, colors) {
+    constructor(canvas) {
         this._canvas = canvas
         this._context = canvas.getContext('2d');
-        this._colors = colors
     }
 
     clearCanvas() {

@@ -60,3 +60,9 @@
     font-size: 27px;
     margin-bottom: 20px;
 }
+
+.rule {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}

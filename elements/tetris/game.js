@@ -1,16 +1,52 @@
 import {GameLogic} from "./tetrisLogic/gameLogic.js";
-import {replaceAllPlayerList} from "../playerList/playerList.js";
+
 
 const tetrisHTML =
     '        <div id="game-container-canvas">\n' +
-    '            <div class="next-elem-container game-elem">' +
+    '            <div class="next-elem-container game-elemg">' +
     '                <div class="next-elem-label">' +
     '                   Следующая фигура:' +
     '                </div>' +
-    '            <canvas width="120" height="120" class="next-elem ">\n' +
+    '                <canvas width="120" height="120" class="next-elem ">\n' +
+    '                </canvas>\n' +
+    '                <div class="game-rules">' +
+    '                    <table class="rules-list">' +
+    '                        <tr>' +
+    '                            <th class="rule">' +
+    '                                ⟵' +
+    '                            </th>' +
+    '                            <th class="rule">' +
+    '                                подвинуть фигуру влево' +
+    '                            </th>' +
+    '                        </tr>' +
+    '                        <tr>' +
+    '                            <th class="rule">' +
+    '                                ⟶' +
+    '                            </th>' +
+    '                            <th class="rule">' +
+    '                                подвинуть фигуру вправо' +
+    '                            </th>' +
+    '                        </tr>' +
+    '                        <tr>' +
+    '                            <th class="rule">' +
+    '                                ↓' +
+    '                            </th>' +
+    '                            <th class="rule">' +
+    '                                подвинуть фигуру вниз' +
+    '                            </th>' +
+    '                        </tr>' +
+    '                        <tr>' +
+    '                            <th class="rule">' +
+    '                                ↑' +
+    '                            </th>' +
+    '                            <th class="rule">' +
+    '                                повернуть фигуру на 90°' +
+    '                            </th>' +
+    '                        </tr>' +
+    '                    </table>' +
+    '                </div>' +
     '            </div>' +
     '\n' +
-    '            </canvas>\n' +
     '            <canvas width="300" height="600" class="tetris game-elem">\n' +
     '\n' +
     '            </canvas>\n' +
@@ -46,7 +82,6 @@ class Game {
 
     #clickOnStopGame() {
         this._gameLogic.gameOver()
-        // this.#onGameOver()
     }
 
     #onGameOver() {
@@ -61,8 +96,6 @@ class Game {
 export const createTetrisElem = (onGameOver) => {
     let elem = document.createElement('div')
     elem.innerHTML = tetrisHTML
-    // console.log(elem.innerHTML)
-    // console.log(elem.getElementsByClassName('next-elem')[0])
     let game = new Game(
         elem.getElementsByClassName('next-elem')[0],
         elem.getElementsByClassName('tetris')[0],

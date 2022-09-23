@@ -1,17 +1,14 @@
 html, body {
 }
 
-
 body {
   background: #fed7c6;
 }
-
 
 .player-list {
   float:right;
   position: relative;
 }
-
 
 @media screen and (min-width: 0px) {
   .content-table {
@@ -46,6 +43,3 @@ body {
   }
 
 }
-
-
-
